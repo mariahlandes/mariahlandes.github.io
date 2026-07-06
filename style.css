@@ -146,6 +146,15 @@ a {
   flex: 0 0 220px;
 }
 
+.profile-photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent-light);
+  box-shadow: var(--shadow);
+}
+
 .photo-placeholder {
   width: 220px;
   height: 220px;
