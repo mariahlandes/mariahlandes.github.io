@@ -277,8 +277,8 @@ a {
 
 /* ===== Cards / Projects ===== */
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 28px;
 }
 
@@ -292,8 +292,13 @@ a {
   flex-direction: column;
 }
 
+.project-card {
+  flex-direction: row;
+  align-items: stretch;
+}
+
 .project-media {
-  aspect-ratio: 16 / 10;
+  flex: 0 0 380px;
   background: var(--accent-light);
 }
 
@@ -502,5 +507,17 @@ a {
 
   .timeline-header {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 860px) {
+  .project-card {
+    flex-direction: column;
+  }
+
+  .project-media {
+    flex: none;
+    width: 100%;
+    aspect-ratio: 16 / 10;
   }
 }
