@@ -292,13 +292,9 @@ a {
   flex-direction: column;
 }
 
-.project-card {
-  flex-direction: row;
-  align-items: stretch;
-}
-
 .project-media {
-  flex: 0 0 380px;
+  width: 100%;
+  aspect-ratio: 21 / 9;
   background: var(--accent-light);
 }
 
@@ -507,17 +503,5 @@ a {
 
   .timeline-header {
     flex-direction: column;
-  }
-}
-
-@media (max-width: 860px) {
-  .project-card {
-    flex-direction: column;
-  }
-
-  .project-media {
-    flex: none;
-    width: 100%;
-    aspect-ratio: 16 / 10;
   }
 }
