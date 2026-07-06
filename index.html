@@ -106,7 +106,7 @@
               </div>
             </div>
             <div class="card-body">
-              <h3>Project Title One</h3>
+              <h3>Operations Dashboard</h3>
               <p>Short description of the project goes here — what it does and the problem it solves.</p>
               <ul class="tag-list small">
                 <li class="tag">Tool 1</li>
@@ -119,17 +119,27 @@
 
           <article class="card project-card">
             <div class="project-media">
-              <div class="media-placeholder">
-                <span>🖼️</span>
-                <p>Add project screenshot / GIF</p>
-              </div>
+              <iframe
+                src="assets/electrical-panel-metering-diagram.html"
+                title="Electrical Panel Metering Pipeline architecture diagram"
+                class="project-diagram"
+                loading="lazy">
+              </iframe>
             </div>
             <div class="card-body">
-              <h3>Project Title Two</h3>
-              <p>Short description of the project goes here — what it does and the problem it solves.</p>
+              <h3>Electrical Panel Metering Pipeline</h3>
+              <p>
+                An ETL pipeline that ingests electrical panel metering readings from Excel exports and
+                standardizes them through a Bronze/Silver/Gold data model in SQL Server. Python scripts
+                iterate over incoming files and run macros to reshape the raw readings; Bronze captures
+                the data as received, Silver cleans and standardizes panel- and channel-level readings
+                (voltage, breaker, system, location), and Gold produces a dimensional model ready for
+                reporting. The diagram above (drawn in draw.io) is interactive — pan and zoom to explore it.
+              </p>
               <ul class="tag-list small">
-                <li class="tag">Tool 1</li>
-                <li class="tag">Tool 2</li>
+                <li class="tag">Python</li>
+                <li class="tag">SQL Server Stored Procedures</li>
+                <li class="tag">draw.io</li>
               </ul>
               <a href="#" class="card-link">View Project →</a>
             </div>
@@ -143,7 +153,7 @@
               </div>
             </div>
             <div class="card-body">
-              <h3>Project Title Three</h3>
+              <h3>Economic Indicators Dashboard</h3>
               <p>Short description of the project goes here — what it does and the problem it solves.</p>
               <ul class="tag-list small">
                 <li class="tag">Tool 1</li>
